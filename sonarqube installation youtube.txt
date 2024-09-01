@@ -1,0 +1,36 @@
+https://youtu.be/3vOnAftKKnw?si=zDTwj5me7UErOUBa
+
+     yum install java
+     yum install wget unzip -y
+     wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.1.69595.zip
+     unzip sonarqube-9.9.1.69595.zip
+     useradd sonar
+  
+    vi /etc/sudoers
+    ls
+    mv sonarqube-9.9.1.69595 /opt
+    chown -R sonar:sonar /opt/sonarqube-9.9.1.69595
+    chmod -R 775 /opt/sonarqube-9.9.1.69595
+    su sonar -
+    cd /opt
+    cd sonarqube-9.9.1.69595/
+    ls
+    cd bin/
+    ls
+    cd linux-x86-64/
+    ls
+    ./sonar.sh start
+    ./sonar.sh status
+
+http://ipaddress:9000/
+
+
+https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.9.1.69595.zip
+
+https://www.sonarsource.com/products/sonarqube/downloads/
+
+sqa_d1383994bd407e341ce2da7e33981a809208a55c
+
+withSonarQubeEnv(credentialsId: 'sonarcred') {
+    // some block
+}
